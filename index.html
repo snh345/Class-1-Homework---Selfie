@@ -1,0 +1,101 @@
+<html>
+<head>
+    <style>
+        .row{
+            display: grid;
+            gap: 0px;
+            grid-template-columns: repeat(3,0fr);
+        }
+        .image{
+            width: 100%;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <audio controls playsinline id="ding">
+        <source src="ding.wav" type="audio/mpeg">
+    </audio>
+
+    <div class="row">
+        <div class="image"><img src="snow/9.jpg" alt="snow" id="ch1"></div>
+        <div class="image"><img src="snow/8.jpg" alt="snow" id="ch2"></div>
+        <div class="image"><img src="snow/7.jpg" alt="snow" id="ch3"></div>
+        <div class="image"><img src="snow/6.jpg" alt="snow" id="ch4"></div>
+        <div class="image"><img src="snow/5.jpg" alt="snow" id="ch5"></div>
+        <div class="image"><img src="snow/4.jpg" alt="snow" id="ch6"></div>
+        <div class="image"><img src="snow/3.jpg" alt="snow" id="ch7"></div>
+        <div class="image"><img src="snow/2.jpg" alt="snow" id="ch8"></div>
+        <div class="image"><img src="snow/1.jpg" alt="snow" id="ch9"></div>
+    </div>
+
+<script>
+/*var Image_Id = document.getElementById('ch1');
+            if (Image_Id.src.match("snow/9.jpg")) {
+                Image_Id.src = "selfie/9.jpg";*/
+var ding = document.getElementById('ding');
+ding.playbackRate = 8;
+
+var img1 = document.getElementById('ch1');
+var img2 = document.getElementById('ch2');
+var img3 = document.getElementById('ch3');
+var img4 = document.getElementById('ch4');
+var img5 = document.getElementById('ch5');
+var img6 = document.getElementById('ch6');
+var img7 = document.getElementById('ch7');
+var img8 = document.getElementById('ch8');
+var img9 = document.getElementById('ch9');
+
+var num = 0;
+
+img1.onclick = function(){
+    img1.src = "selfie/9.jpg";
+    playDing();
+
+}
+img2.onclick = function(){
+    img2.src = "selfie/8.jpg";
+    playDing();
+}
+img3.onclick = function(){
+    img3.src = "selfie/7.jpg";
+    playDing();
+}
+img4.onclick = function(){
+    img4.src = "selfie/6.jpg";
+    playDing();
+}
+img5.onclick = function(){
+    img5.src = "selfie/5.jpg";
+    playDing();
+}
+img6.onclick = function(){
+    img6.src = "selfie/4.jpg";
+    playDing();
+}
+img7.onclick = function(){
+    img7.src = "selfie/3.jpg";
+    playDing();
+}
+img8.onclick = function(){
+    img8.src = "selfie/2.jpg";
+    playDing();
+}
+img9.onclick = function(){
+    img9.src = "selfie/1.jpg";
+    playDing();
+}
+
+function playDing(){
+    ding.play();
+}
+
+</script>
+
+</body>
+
+
+
+</html>
